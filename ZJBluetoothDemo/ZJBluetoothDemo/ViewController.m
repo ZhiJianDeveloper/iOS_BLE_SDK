@@ -27,7 +27,11 @@
     __weak typeof(self) weakSelf = self;
     [self.activityIndicatorView startAnimating];
     sender.enabled = NO;
-    [[ZJBluetoothManager manager] requestConfigNetworkByWiFiSSID:self.wifiSSID password:self.passwordTextFeild.text mac:self.macAddressLabel.text completeBlock:^(NSInteger errorCode) {
+    
+    //初始化SDK秘钥 可在 AppDelegate内初始化
+    [ZJBluetoothManager initWithDefaultAESKey:@"1234567890123456" ivKey:@"1234567890123456"];
+    //配置WiFi
+    [[ZJBluetoothManager sharedManager] requestConfigNetworkByWiFiSSID:self.wifiSSID password:self.passwordTextFeild.text mac:self.macAddressLabel.text completeBlock:^(NSInteger errorCode) {
         
         [weakSelf.activityIndicatorView stopAnimating];
         sender.enabled = YES;
