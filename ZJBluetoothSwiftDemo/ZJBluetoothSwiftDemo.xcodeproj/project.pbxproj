@@ -14,9 +14,6 @@
 		9E5DFBFF21A552DE002B3BFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E5DFBFD21A552DE002B3BFA /* LaunchScreen.storyboard */; };
 		9E5DFC0A21A552DE002B3BFA /* ZJBluetoothSwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5DFC0921A552DE002B3BFA /* ZJBluetoothSwiftDemoUITests.swift */; };
 		9E5DFC1921A55328002B3BFA /* ZJBluetoothBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5DFC1821A55328002B3BFA /* ZJBluetoothBridge.m */; };
-		9E5DFC3521A55AA7002B3BFA /* ZJBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E5DFC3421A55AA7002B3BFA /* ZJBluetooth.framework */; };
-		9E5DFC3621A55AC1002B3BFA /* ZJBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E5DFC3421A55AA7002B3BFA /* ZJBluetooth.framework */; };
-		9E5DFC3721A55AC1002B3BFA /* ZJBluetooth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9E5DFC3421A55AA7002B3BFA /* ZJBluetooth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +33,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9E5DFC3721A55AC1002B3BFA /* ZJBluetooth.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,7 +54,6 @@
 		9E5DFC1721A55328002B3BFA /* ZJBluetoothBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJBluetoothBridge.h; sourceTree = "<group>"; };
 		9E5DFC1821A55328002B3BFA /* ZJBluetoothBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJBluetoothBridge.m; sourceTree = "<group>"; };
 		9E5DFC3321A55947002B3BFA /* ZJBluetoothSwiftDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZJBluetoothSwiftDemo.entitlements; sourceTree = "<group>"; };
-		9E5DFC3421A55AA7002B3BFA /* ZJBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZJBluetooth.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E5DFC3521A55AA7002B3BFA /* ZJBluetooth.framework in Frameworks */,
-				9E5DFC3621A55AC1002B3BFA /* ZJBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +95,6 @@
 		9E5DFBF321A552DD002B3BFA /* ZJBluetoothSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
-				9E5DFC3421A55AA7002B3BFA /* ZJBluetooth.framework */,
 				9E5DFC3321A55947002B3BFA /* ZJBluetoothSwiftDemo.entitlements */,
 				9E5DFBF421A552DD002B3BFA /* AppDelegate.swift */,
 				9E5DFC1721A55328002B3BFA /* ZJBluetoothBridge.h */,

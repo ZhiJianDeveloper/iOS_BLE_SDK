@@ -15,9 +15,6 @@
 		9E5DFB1221A4ED93002B3BFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5DFB1121A4ED93002B3BFA /* main.m */; };
 		9E5DFB1C21A4ED93002B3BFA /* ZJBluetoothDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5DFB1B21A4ED93002B3BFA /* ZJBluetoothDemoUITests.m */; };
 		9E5DFB3121A4F523002B3BFA /* NSString+WiFiExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5DFB2F21A4F523002B3BFA /* NSString+WiFiExtension.m */; };
-		9E5DFC3921A55B42002B3BFA /* ZJBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E5DFC3821A55B42002B3BFA /* ZJBluetooth.framework */; };
-		9E5DFC3A21A55B73002B3BFA /* ZJBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E5DFC3821A55B42002B3BFA /* ZJBluetooth.framework */; };
-		9E5DFC3B21A55B73002B3BFA /* ZJBluetooth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9E5DFC3821A55B42002B3BFA /* ZJBluetooth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +34,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9E5DFC3B21A55B73002B3BFA /* ZJBluetooth.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,7 +57,6 @@
 		9E5DFB2F21A4F523002B3BFA /* NSString+WiFiExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WiFiExtension.m"; sourceTree = "<group>"; };
 		9E5DFB3021A4F523002B3BFA /* NSString+WiFiExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WiFiExtension.h"; sourceTree = "<group>"; };
 		9E5DFB3221A4F82E002B3BFA /* ZJBluetoothDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZJBluetoothDemo.entitlements; sourceTree = "<group>"; };
-		9E5DFC3821A55B42002B3BFA /* ZJBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZJBluetooth.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E5DFC3921A55B42002B3BFA /* ZJBluetooth.framework in Frameworks */,
-				9E5DFC3A21A55B73002B3BFA /* ZJBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +100,6 @@
 			children = (
 				9E5DFB3221A4F82E002B3BFA /* ZJBluetoothDemo.entitlements */,
 				9E5DFB0221A4ED92002B3BFA /* AppDelegate.h */,
-				9E5DFC3821A55B42002B3BFA /* ZJBluetooth.framework */,
 				9E5DFB0321A4ED92002B3BFA /* AppDelegate.m */,
 				9E5DFB0521A4ED92002B3BFA /* ViewController.h */,
 				9E5DFB0621A4ED92002B3BFA /* ViewController.m */,
