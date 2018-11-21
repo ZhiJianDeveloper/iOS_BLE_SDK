@@ -16,12 +16,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    //初始化SDK 秘钥
-    [ZJBluetoothManager initWithDefaultAESKey:@"1234567890123456" ivKey:@"1234567890123456"];
-    //配置印章WiFi账号密码
-    [[ZJBluetoothManager manager] requestConfigNetworkByWiFiSSID:@"zhijian_WiFi" password:@"WiFi_password" mac:@"12:23:34:45:56" completeBlock:^(NSInteger errorCode) {
-        
-    }];
     return YES;
 }
 

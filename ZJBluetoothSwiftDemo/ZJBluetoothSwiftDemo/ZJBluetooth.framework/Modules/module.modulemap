@@ -1,0 +1,6 @@
+framework module ZJBluetooth {
+  umbrella header "ZJBluetooth.h"
+
+  export *
+  module * { export * }
+}
