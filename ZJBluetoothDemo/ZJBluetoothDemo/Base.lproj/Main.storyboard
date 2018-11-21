@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EsY-ag-xH0"/>
+                        <viewControllerLayoutGuide type="bottom" id="aYA-qi-dcX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WiFi_SSID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpc-S0-n8D">
+                                <rect key="frame" x="36" y="70" width="80" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="TeM-lI-heq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQo-CC-21W">
+                                <rect key="frame" x="36" y="108" width="82.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入WiFi密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zkr-Bw-03K">
+                                <rect key="frame" x="128.5" y="108" width="155.5" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ed-hw-p3N">
+                                <rect key="frame" x="136" y="70" width="148" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7u-Gf-fg8">
+                                <rect key="frame" x="108.5" y="259" width="103" height="30"/>
+                                <state key="normal" title="ConfigNetwork"/>
+                                <connections>
+                                    <action selector="ConfigNetworkButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="12w-b0-knI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERROR_CODE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAX-06-afZ">
+                                <rect key="frame" x="36" y="208" width="110" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="Y1b-OT-f3a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1Z-dP-syt">
+                                <rect key="frame" x="156" y="208" width="128" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="0N5-0n-z9Q">
+                                <rect key="frame" x="221.5" y="264" width="20" height="20"/>
+                                <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="color" red="0.1450980392" green="0.50980392159999999" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cre-ME-WL8">
+                                <rect key="frame" x="36" y="158" width="33" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="12:23:34:45:56" borderStyle="roundedRect" placeholder="请输入WiFi密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9gc-bE-AJ4">
+                                <rect key="frame" x="128.5" y="158" width="155.5" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9gc-bE-AJ4" firstAttribute="trailing" secondItem="zkr-Bw-03K" secondAttribute="trailing" id="15T-yG-kzQ"/>
+                            <constraint firstItem="vpc-S0-n8D" firstAttribute="top" secondItem="EsY-ag-xH0" secondAttribute="bottom" constant="50" id="564-vt-zvk"/>
+                            <constraint firstItem="6Ed-hw-p3N" firstAttribute="leading" secondItem="vpc-S0-n8D" secondAttribute="trailing" constant="20" id="5XF-l4-70T"/>
+                            <constraint firstItem="6Ed-hw-p3N" firstAttribute="bottom" secondItem="vpc-S0-n8D" secondAttribute="bottom" id="5aU-jJ-463"/>
+                            <constraint firstItem="9gc-bE-AJ4" firstAttribute="top" secondItem="cre-ME-WL8" secondAttribute="top" id="7Oz-51-mb9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="G1Z-dP-syt" secondAttribute="trailing" constant="20" id="DzJ-Hn-egU"/>
+                            <constraint firstItem="G1Z-dP-syt" firstAttribute="top" secondItem="XAX-06-afZ" secondAttribute="top" id="F39-34-CLy"/>
+                            <constraint firstItem="9gc-bE-AJ4" firstAttribute="leading" secondItem="zkr-Bw-03K" secondAttribute="leading" id="I0B-Gy-YrN"/>
+                            <constraint firstItem="0N5-0n-z9Q" firstAttribute="centerY" secondItem="k7u-Gf-fg8" secondAttribute="centerY" id="L4u-fM-qEl"/>
+                            <constraint firstItem="0N5-0n-z9Q" firstAttribute="leading" secondItem="k7u-Gf-fg8" secondAttribute="trailing" constant="10" id="NBO-gE-Eaj"/>
+                            <constraint firstItem="6Ed-hw-p3N" firstAttribute="top" secondItem="vpc-S0-n8D" secondAttribute="top" id="Oh6-bx-PoW"/>
+                            <constraint firstItem="XAX-06-afZ" firstAttribute="leading" secondItem="nQo-CC-21W" secondAttribute="leading" id="OhV-gP-elV"/>
+                            <constraint firstItem="XAX-06-afZ" firstAttribute="top" secondItem="cre-ME-WL8" secondAttribute="bottom" constant="20" id="PVx-v9-OLK"/>
+                            <constraint firstItem="cre-ME-WL8" firstAttribute="leading" secondItem="nQo-CC-21W" secondAttribute="leading" id="U5x-hC-ptF"/>
+                            <constraint firstItem="vpc-S0-n8D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Z2O-1q-FdY"/>
+                            <constraint firstItem="nQo-CC-21W" firstAttribute="top" secondItem="vpc-S0-n8D" secondAttribute="bottom" constant="20" id="Z73-q9-e1J"/>
+                            <constraint firstItem="9gc-bE-AJ4" firstAttribute="bottom" secondItem="cre-ME-WL8" secondAttribute="bottom" id="btv-T3-qww"/>
+                            <constraint firstItem="G1Z-dP-syt" firstAttribute="bottom" secondItem="XAX-06-afZ" secondAttribute="bottom" id="cLW-hm-Odb"/>
+                            <constraint firstItem="zkr-Bw-03K" firstAttribute="bottom" secondItem="nQo-CC-21W" secondAttribute="bottom" id="dPg-4f-oBp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Ed-hw-p3N" secondAttribute="trailing" constant="20" id="fCr-mU-wWB"/>
+                            <constraint firstItem="zkr-Bw-03K" firstAttribute="top" secondItem="nQo-CC-21W" secondAttribute="top" id="mBb-or-oG4"/>
+                            <constraint firstItem="nQo-CC-21W" firstAttribute="leading" secondItem="vpc-S0-n8D" secondAttribute="leading" id="opL-Sn-xVH"/>
+                            <constraint firstItem="k7u-Gf-fg8" firstAttribute="top" secondItem="XAX-06-afZ" secondAttribute="bottom" constant="30" id="qak-T9-qzc"/>
+                            <constraint firstItem="G1Z-dP-syt" firstAttribute="leading" secondItem="XAX-06-afZ" secondAttribute="trailing" constant="10" id="rHv-vS-NSJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zkr-Bw-03K" secondAttribute="trailing" constant="20" id="skp-hH-SNj"/>
+                            <constraint firstItem="cre-ME-WL8" firstAttribute="top" secondItem="nQo-CC-21W" secondAttribute="bottom" constant="20" id="su7-fa-T2e"/>
+                            <constraint firstItem="zkr-Bw-03K" firstAttribute="leading" secondItem="nQo-CC-21W" secondAttribute="trailing" constant="10" id="usP-eR-sRF"/>
+                            <constraint firstItem="k7u-Gf-fg8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yg2-ln-4T4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="0N5-0n-z9Q" id="zoA-AJ-bj0"/>
+                        <outlet property="errorCodeLabel" destination="G1Z-dP-syt" id="Sir-cs-j7d"/>
+                        <outlet property="macAddressLabel" destination="9gc-bE-AJ4" id="KEG-MP-n6T"/>
+                        <outlet property="passwordTextFeild" destination="zkr-Bw-03K" id="eb7-pS-IT7"/>
+                        <outlet property="ssidLabel" destination="6Ed-hw-p3N" id="dbp-ma-D4q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-95" y="8"/>
+        </scene>
+    </scenes>
+</document>
