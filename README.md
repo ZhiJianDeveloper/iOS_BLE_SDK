@@ -32,6 +32,24 @@
 * 真机运行
 * 真机运行
 
+####配置印章WiFi
+
+```
+    //	初始化SDKAES加密秘钥秘钥 可在 AppDelegate内初始化
+	[ZJBluetoothManager initWithDefaultAESKey:@"1234567890123456" ivKey:@"1234567890123456"];
+    //配置WiFi
+	[[ZJBluetoothManager sharedManager] requestConfigNetworkByWiFiSSID:@"WIFISSID" password:@"PASSWORD" mac:@"12:12:23:23:35" completeBlock:^(NSInteger errorCode) {
+        if (errorCode) {
+            NSLog(@"%zd",errorCode);
+        }
+        else
+        {
+            NSLog(@"根据需要处理业务逻辑");
+        }
+    }];
+    
+```
+
 
 ## 常见错误
 ### Reason: image not found 请参照图3 图4 图5 添加framwork
